@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ReviewAndroidPoint.iml" filepath="$PROJECT_DIR$/ReviewAndroidPoint.iml" />
+      <module fileurl="file://$PROJECT_DIR$/act_4_lanuch_mode/act_4_lanuch_mode.iml" filepath="$PROJECT_DIR$/act_4_lanuch_mode/act_4_lanuch_mode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dispatch_event/dispatch_event.iml" filepath="$PROJECT_DIR$/dispatch_event/dispatch_event.iml" />
+      <module fileurl="file://$PROJECT_DIR$/h5_js_java/h5_js_java.iml" filepath="$PROJECT_DIR$/h5_js_java/h5_js_java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/marqueeview/marqueeview.iml" filepath="$PROJECT_DIR$/marqueeview/marqueeview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/messenger_service/messenger_service.iml" filepath="$PROJECT_DIR$/messenger_service/messenger_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvp/mvp.iml" filepath="$PROJECT_DIR$/mvp/mvp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvp_demo/mvp_demo.iml" filepath="$PROJECT_DIR$/mvp_demo/mvp_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvp_practice/mvp_practice.iml" filepath="$PROJECT_DIR$/mvp_practice/mvp_practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my_service/my_service.iml" filepath="$PROJECT_DIR$/my_service/my_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/property_animation_demo/property_animation_demo.iml" filepath="$PROJECT_DIR$/property_animation_demo/property_animation_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qq_drawer/qq_drawer.iml" filepath="$PROJECT_DIR$/qq_drawer/qq_drawer.iml" />
+    </modules>
+  </component>
+</project>
