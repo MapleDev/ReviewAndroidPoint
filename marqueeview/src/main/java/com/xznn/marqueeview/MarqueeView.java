@@ -8,11 +8,9 @@ package com.xznn.marqueeview;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
@@ -66,16 +64,12 @@ public class MarqueeView extends HorizontalScrollView implements Runnable{
         viewWidth = viewWidth + view.getMeasuredWidth() + viewMargin;
     }
 
+    /**
+     * 移除 view
+     * @param view
+     */
     public void removeViewInQueue(View view){
-//        ((ViewGroup)mainLayout).removeView(view);
-//        ((ViewGroup)mainLayout).removeViewAt(i);
-
-        Log.d("DDD", "getChildCount() = " + mainLayout.getChildCount());
-
-        ((ViewGroup)mainLayout).removeView(view);
-
-        Log.d("DDD", "getChildCount() = " + mainLayout.getChildCount());
-
+        mainLayout.removeView(view);
     }
 
     //开始滚动
