@@ -4,25 +4,51 @@
               android:layout_height="wrap_content"
               android:orientation="vertical">
 
-    <com.xznn.marqueeview.MarqueeView
-        android:id="@+id/marquee_view"
+    <FrameLayout
+        android:id="@+id/ff"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:background="#AAA"
-        android:fillViewport="true"
-        android:gravity="center"
-        android:padding="5dp"/>
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/falang_bg"/>
+
+        <ImageView
+            android:id="@+id/falang_fg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/falang_fg"/>
+
+        <ImageView
+            android:id="@+id/falang_fg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/falang_fg"/>
+
+        <com.xznn.marqueeview.MarqueeView
+            android:id="@+id/marquee_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fillViewport="true"
+            android:gravity="center"
+            android:padding="5dp"/>
+
+    </FrameLayout>
+
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onAdd"
-        android:text="onAdd"/>
+        android:text="onAdd跑马灯view"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="onDel"
-        android:onClick="onDel"/>
+        android:onClick="onDel"
+        android:text="onDel跑马灯view"/>
+
 
 </LinearLayout>
