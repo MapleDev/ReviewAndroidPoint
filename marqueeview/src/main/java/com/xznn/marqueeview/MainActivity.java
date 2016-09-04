@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
 
     private MarqueeView marqueeView;
     private ImageView mIv2;
-    private LinearLayout mInflate2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +21,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         marqueeView = (MarqueeView) findViewById(R.id.marquee_view);
         initMarqueeView();
+
+    }
+
+    private void setMarqueeViewVisibility() {
+            if(map.size() == 0) {
+                marqueeView.setVisibility(View.GONE);
+            } else {
+                marqueeView.setVisibility(View.VISIBLE);
+            }
     }
 
     private void initMarqueeView() {
@@ -43,21 +51,32 @@ public class MainActivity extends AppCompatActivity {
         marqueeView.setScrollDirection(MarqueeView.RIGHT_TO_LEFT);
         marqueeView.setViewMargin(15);
         marqueeView.startScroll();
+
+        setMarqueeViewVisibility();
+
     }
 
-    public int ID = 10000;
+    public int ID = 10002;
     LinkedHashMap<Integer, View> map = new LinkedHashMap<>();
 
     public void onAdd(View v) {
         LinearLayout inflate = (LinearLayout) LayoutInflater.from(this).inflate(R.layout.marquee_content, null);
         TextView tv = (TextView) inflate.findViewById(R.id.tv);
-        tv.setText(ID+"");
+        tv.setText(ID + "");
         marqueeView.addViewInQueue(inflate);
 
         map.put(ID++, inflate);
+
+        setMarqueeViewVisibility();
+
     }
 
     public void onDel(View v) {
-        marqueeView.removeViewInQueue(map.get(10002));
+        if (map.containsKey(10002)) {
+            marqueeView.removeViewInQueue(map.get(10002));
+            map.remove(10002);
+        }
+        setMarqueeViewVisibility();
     }
+
 }
